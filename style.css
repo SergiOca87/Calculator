@@ -1,0 +1,103 @@
+body{
+    background: #0F0F0F;
+    padding-top: 40px;
+    font-family: 'Electrolize', sans-serif;
+    background: url('https://images.unsplash.com/photo-1521710927254-3dd9ef96a3fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+  }
+  
+  #app{
+    display: grid;
+    min-width: 250px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 10px;
+    margin: 0 auto;
+  
+    background: #252525;
+    padding: 20px 15px 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0, 1);
+  }
+  
+  .num, #equals, #back, #reset, .operator{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0F0F0F;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: ease-in 50ms;
+    color: #919191;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .solar-panel{
+    background: black;
+    grid-column: 3 / -1;
+    margin: 10px;
+    display: flex;
+    background: #483932;
+  }
+  
+  .solar-panel span{
+    flex: 1;
+    display: block;
+    /* background-image: rgba(52, 34, 24, .2), */
+     background-image:linear-gradient(
+       to top,
+       rgba(52, 34, 24, 0.8),
+       rgba(52, 34, 24, 0.8)), url('https://res.cloudinary.com/diqkerptd/image/upload/v1549744642/wallpaper_grid_black_gallery_a_b2s1v2.jpg');
+    
+    background-size: 50px;
+    background-position: center;
+    margin: 1px;
+    
+  }
+  
+  .num:hover, .operator:hover, #equals:hover{
+    color: white;
+  }
+  
+  #outputScreen{
+    overflow: hidden;
+    font-size: 24px;
+    background: #7a9b51;
+    color: rgba(0, 0, 0, .8);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0, .75);
+  }
+  
+  #equals:hover{
+    color: white;
+  }
+   
+  #back:hover{
+    color: white;
+  }
+  
+  #reset:hover{
+    color: white;
+  }
+  
+  .output-screen{
+    grid-column: span 4;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .num:active, .click:active, #equals:active, .operator:active{
+    transform: translateY(1px);
+    box-shadow: none;
+  }

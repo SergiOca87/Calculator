@@ -1,3 +1,5 @@
+console.log('With the invaluable help of my dearest Mai');
+
 window.onload = function(){
 
 let firstValues = [];
@@ -85,13 +87,3 @@ const mathOperand = (operand, arr1, arr2) => {
 };
   
 };
-
-
-
-
-
-//Mai todoses:
-//- Numeros en pantalla en morenito
-//- Al clicar, que parezca que pitjis
-//- 0 ny default
-//-Digits font
